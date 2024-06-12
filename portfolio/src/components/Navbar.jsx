@@ -20,13 +20,13 @@ const Navbar = () => {
     }, []);
 
     return (
-        <div className='w-fit mx-auto py-5'>
-            <ul className={`flex gap-5 mx-auto font-semibold rounded-full fixed -translate-x-1/4 transform transition-colors py-1.5 px-4 text-gray-200 ${scrolled ? ' backdrop-filter backdrop-blur-sm bg-white bg-opacity-20' : 'bg-transparent '}`}>
-                <li className='cursor-pointer hover:text-orange-400 transform transition-colors'>Sobre mí</li>
-                <li className='cursor-pointer hover:text-orange-400 transform transition-colors'>Proyectos</li>
-                <li className='cursor-pointer hover:text-orange-400 transform transition-colors'>Tecnologias</li>
-                <li className='cursor-pointer hover:text-orange-400 transform transition-colors'>Contacto</li>
-            </ul>
+        <div className=' mx-auto py-5'>
+            <nav className={`flex gap-5  font-semibold rounded-full fixed top-6 -translate-x-1/2 left-1/2 transform transition-colors py-1.5 px-4 text-gray-200 ${scrolled ? ' backdrop-filter backdrop-blur-sm bg-white bg-opacity-30' : 'bg-transparent '}`}>
+                <a className='cursor-pointer hover:text-yellow-500 transform transition-colors font-bold'>Sobre mí</a>
+                <a className='cursor-pointer hover:text-yellow-500 transform transition-colors font-bold'>Proyectos</a>
+                <a className='cursor-pointer hover:text-yellow-500 transform transition-colors font-bold'>Tecnologias</a>
+                <a className='cursor-pointer hover:text-yellow-500 transform transition-colors font-bold'>Contacto</a>
+            </nav>
         </div>
     );
 };
